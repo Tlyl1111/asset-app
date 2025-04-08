@@ -1,0 +1,60 @@
+.carousel-3d-layered {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1800px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+}
+
+.carousel-card-layered {
+  position: absolute;
+  width: 220px;
+  height: 300px;
+  background-color: rgba(188, 187, 187, 0.35);
+  opacity: 0.85;
+  border-radius: 20px;
+  border: 1px solid rgba(139, 137, 137, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.carousel-card-layered img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: multiply;
+}
+
+/* Nút điều hướng */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(100, 100, 100, 0.2);
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 999;
+  user-select: none;
+  transition: background 0.3s;
+}
+.nav-button:hover {
+  background: rgba(100, 100, 100, 0.4);
+}
+.nav-button.left {
+  left: 30px;
+}
+.nav-button.right {
+  right: 30px;
+}

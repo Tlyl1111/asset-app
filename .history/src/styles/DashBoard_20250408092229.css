@@ -1,0 +1,36 @@
+.title-main {
+  font-size: 22px;
+}
+
+@media (max-width: 500px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .title-main {
+    font-size: 18px;
+  }
+
+  .btn-light, .btn-fade {
+    padding: 4px 12px;
+    font-size: 14px;
+  }
+
+  .carousel-wrapper {
+    height: 260px;
+  }
+
+  .bottom-bar {
+    gap: 8px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-round, .btn-plus {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,44 @@
+.carousel-3d-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  overflow: hidden;
+  height: 360px;
+  position: relative;
+}
+
+.carousel-3d-card {
+  position: absolute;
+  width: 260px;
+  height: 340px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel-3d-card h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.service-tag {
+  font-size: 12px;
+  background: #bbb;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}

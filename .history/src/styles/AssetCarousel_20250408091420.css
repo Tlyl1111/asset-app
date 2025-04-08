@@ -1,0 +1,64 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-card {
+  flex: 0 0 80%;
+  margin: 0 auto;
+  background: rgba(240, 240, 240, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transform: scale(0.9);
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-card.active {
+  transform: scale(1) rotateY(0deg);
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-card:not(.active) {
+  transform: scale(0.9) rotateY(-5deg);
+  z-index: 1;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.service-tag {
+  font-size: 12px;
+  background: #ccc;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.car-info h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.car-info p {
+  font-size: 14px;
+  color: #777;
+}

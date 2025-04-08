@@ -1,0 +1,50 @@
+.carousel-3d {
+  display: flex;
+  overflow-x: auto;
+  padding: 60px;
+  perspective: 1800px;
+  scroll-snap-type: x mandatory;
+  background-color: white;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 220px;
+  height: 300px;
+  margin-right: 12px; /* ✅ giảm khoảng cách giữa các card */
+
+  background-color: rgba(188, 187, 187, 0.377); /* xám nhạt trong mờ */
+  opacity: 0.7;
+
+  border-radius: 20px;
+  border: 1px solid rgba(139, 137, 137, 0);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); /* bóng nhẹ hơn */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  transform: rotateY(35deg) translateZ(-40px); /* ✅ không kéo ra quá xa */
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  scroll-snap-align: center;
+  cursor: pointer;
+}
+
+/* .carousel-card:hover {
+  transform: rotateY(0deg) translateZ(30px); /* ✅ hover nhẹ, không mạnh */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* bóng đậm hơn để "in đậm" */
+  z-index: 10;
+} */
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: multiply;
+}
+
+.carousel-info {
+  display: none;
+}
