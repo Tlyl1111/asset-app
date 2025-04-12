@@ -1,0 +1,100 @@
+/* Container chia layout 2 cột */
+.asset-details-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Cột bên trái chứa nội dung tài sản */
+.asset-info {
+  flex: 1;
+  max-width: 420px;
+}
+
+/* Tiêu đề tên tài sản */
+.asset-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+/* Nút quay lại */
+.back-button {
+  margin-bottom: 12px;
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Nút chỉnh sửa */
+.edit-button {
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-button:hover {
+  background-color: #005dc3;
+}
+
+/* Hiển thị từng dòng metadata như: ngày mua, giá trị,... */
+.asset-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Một mục thông tin (label + value) */
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Label mờ nhỏ phía trên */
+.meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+/* Giá trị chính phía dưới */
+.meta-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+/* Cột bên phải chứa hình ảnh */
+.asset-image-wrapper {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Ảnh tài sản */
+.asset-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}

@@ -1,0 +1,158 @@
+/* Lớp phủ nền tối */
+.asset-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Nội dung modal chính trượt lên */
+.asset-modal-content {
+  background: #f8f9fa;
+  width: 100%;
+  max-width: 680px;
+  padding: 30px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", sans-serif;
+  animation: slideUp 0.35s ease-out forwards;
+  position: relative;
+}
+
+/* Nút ✖ */
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #272728;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.asset-modal-content.slide-down {
+  animation: slideDown 0.3s ease-in forwards;
+}
+
+/* Hiệu ứng trượt lên */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.asset-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;     /* 🔑 Đảm bảo hai bên cùng chiều cao */
+  gap: 410px;
+  margin-top: 40px;
+  height: 100%;              /* 🔑 Cho phép ảnh căn giữa theo dọc */
+}
+
+.asset-info {
+  flex: 1;
+  max-width: 180px;
+}
+
+.asset-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.asset-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+.asset-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* căn giữa ngang */
+  align-items: center;      /* 🔥 căn giữa dọc */
+}
+
+.asset-image {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;          /* Giới hạn chiều cao để không bị tràn */
+  object-fit: contain;        /* Đảm bảo ảnh hiển thị đầy đủ */
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.edit-button {
+  background-color: #eaeaea;
+  color: #111;
+}
+
+.edit-button:hover {
+  background-color: #d2d1d1;
+}
+
+.delete-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #bb2d3b;
+}

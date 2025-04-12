@@ -1,0 +1,105 @@
+/* Tổng khung */
+.asset-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", sans-serif;
+}
+
+/* Nút quay lại nằm riêng trên cùng */
+.back-button-wrapper {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Phần nội dung chính chia 2 cột */
+.asset-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nội dung bên trái */
+.asset-info {
+  flex: 1.4;
+  max-width: 140px;
+}
+
+/* Tiêu đề */
+.asset-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.edit-button:hover {
+  background-color: #005dc3;
+}
+
+/* Hiển thị các dòng thông tin */
+.asset-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+/* Ảnh bên phải */
+.asset-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding có thể điều chỉnh để tránh sát quá */
+  padding-left: 20px;
+}
+
+.asset-image {
+  width: 100%;
+  max-width: 100%;  /* 👈 tăng lên từ 100%/360px */
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

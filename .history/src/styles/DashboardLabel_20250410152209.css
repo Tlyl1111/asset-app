@@ -1,0 +1,43 @@
+.dashboard-label {
+  position: fixed;
+  bottom: 24px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  z-index: 20;
+}
+
+.dashboard-bars {
+  display: flex;                   /* ✅ nằm ngang */
+  flex-direction: row;
+  align-items: flex-end;           /* ✅ canh đáy để tạo cảm giác "so le" */
+  gap: 4px;                        /* khoảng cách giữa hai thanh */
+  margin-bottom: 6px;
+}
+
+.bar {
+  background-color: #555;
+  border-radius: 1px;
+  width: 2px;
+}
+
+.bar.long {
+  height: 20px;
+}
+
+.bar.short {
+  height: 12px;
+}
+
+.text {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-top: 6px;
+}

@@ -1,0 +1,32 @@
+.dashboard-label-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  writing-mode: vertical-rl;       /* chữ viết dọc */
+  text-orientation: mixed;
+  font-family: "Inter", sans-serif;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.bar {
+  background-color: #666;
+  width: 2px;
+  border-radius: 1px;
+  margin: 2px 0;
+}
+
+.bar.long {
+  height: 20px;
+}
+
+.bar.short {
+  height: 12px;
+}
+
+.label-text {
+  margin-top: 6px;
+}
