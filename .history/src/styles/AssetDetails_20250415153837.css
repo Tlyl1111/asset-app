@@ -5,7 +5,7 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  align-items: stretch; 
+  align-items: flex-end;
 }
 
 .asset-modal-content {
@@ -60,14 +60,12 @@
   align-items: stretch;     
   margin-top: 40px;
   height: 100%;
-  gap: 20px;    
-  height: calc(100% - 60px);          
+  gap: 20px;              
 }
 
 .asset-info {
   flex: 1;
   max-width: 140px;
-  overflow-y: auto;
 }
 
 .asset-info h2 {

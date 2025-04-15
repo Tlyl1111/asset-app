@@ -67,7 +67,6 @@
 .asset-info {
   flex: 1;
   max-width: 140px;
-  overflow-y: auto;
 }
 
 .asset-info h2 {

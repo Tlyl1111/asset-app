@@ -28,7 +28,7 @@ function LoginPage() {
           handleLogin();
         }}
       >
-        <h2 className="login-title">Đăng nhập bằng Private Key</h2>
+        <h2 className="login-title">🔐 Đăng nhập bằng Private Key</h2>
 
         <input
           type="password"

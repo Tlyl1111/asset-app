@@ -5,18 +5,18 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  align-items: stretch; 
+  align-items: flex-end;
 }
 
 .asset-modal-content {
   background: white;
   width: 100%;
   max-width: 680px;
-  height: 100%;
+  height: 100;
   padding: 30px;
-  /* border-top-left-radius: 24px;
+  border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08); */
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08);
   font-family: "Inter", sans-serif;
   animation: slideUp 0.35s ease-out forwards;
   position: relative;
@@ -60,14 +60,12 @@
   align-items: stretch;     
   margin-top: 40px;
   height: 100%;
-  gap: 20px;    
-  height: calc(100% - 60px);          
+  gap: 20px;              
 }
 
 .asset-info {
   flex: 1;
   max-width: 140px;
-  overflow-y: auto;
 }
 
 .asset-info h2 {

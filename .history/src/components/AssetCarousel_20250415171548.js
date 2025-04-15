@@ -93,15 +93,15 @@ const AssetCarousel = ({ assets, reloadAssets }) => {
               transform: x.to((val) => {
                 const offset = i + val / CARD_SPACING;
                  return `
-                    translateX(${-offset * CARD_SPACING}px)
-                    translateZ(${offset * -DEPTH}px)
-                    rotateY(${-offset * ROTATION}deg)
-                  `;
-                }),
+    translateX(${-offset * CARD_SPACING}px)
+    translateZ(${offset * -DEPTH}px)
+    rotateY(${-offset * ROTATION}deg)
+  `;
+}),
               zIndex: 100 - i,
             }}
           >
-            <img src={asset.imageURL} alt={asset.name} />
+            <img src={asset.imageUỦL} alt={asset.name} />
           </animated.div>
         ))}
       </div>

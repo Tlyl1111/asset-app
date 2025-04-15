@@ -1,14 +1,12 @@
 import "../styles/AssetCarousel.css";
 import { useEffect, useCallback, useState } from "react";
 import AssetDetails from "../pages/AssetDetails";
-import { useSpring, animated } from "@react-spring/web";
-import { useGesture } from "@use-gesture/react";
 import AssetForm from "./AssetForm";
 import useEmblaCarousel from "embla-carousel-react";
 
-const CARD_SPACING = 80;
-const DEPTH = 100;
-const ROTATION = 25;
+const CARD_SPACING = 65;
+const DEPTH = 80;
+const ROTATION = 15;
 
 const AssetCarousel = ({ assets, reloadAssets }) => {
   const [selectedAssetId, setSelectedAssetId] = useState(null); // 👈 ID được chọn
@@ -83,7 +81,7 @@ const AssetCarousel = ({ assets, reloadAssets }) => {
 
   return (
     <>
-      <div className="carousel-3d-continuous" {...bind()}>
+      {/* <div className="carousel-3d-continuous" {...bind()}>
         {assets.map((asset, i) => (
           <animated.div
             key={asset.id}
@@ -92,19 +90,19 @@ const AssetCarousel = ({ assets, reloadAssets }) => {
             style={{
               transform: x.to((val) => {
                 const offset = i + val / CARD_SPACING;
-                 return `
-                    translateX(${-offset * CARD_SPACING}px)
-                    translateZ(${offset * -DEPTH}px)
-                    rotateY(${-offset * ROTATION}deg)
-                  `;
-                }),
+                return `
+                  translateX(${-offset * CARD_SPACING}px)
+                  translateZ(${offset * -DEPTH}px)
+                  rotateY(${-offset * ROTATION}deg)
+                `;
+              }),
               zIndex: 100 - i,
             }}
           >
-            <img src={asset.imageURL} alt={asset.name} />
+            <img src={asset.image} alt={asset.name} />
           </animated.div>
         ))}
-      </div>
+      </div> */}
 
       {/* <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
